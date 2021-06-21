@@ -40,7 +40,6 @@ $.gulp.task('build', $.gulp.series(
 $.gulp.task('deploy', () => {
   return $.gulp.src("./build/**/*")
     .pipe($.deploy({ 
-      remoteUrl: "https://github.com/yanlogan/yanlogan.github.io.git",
       branch: "prod"
     }))
 });
