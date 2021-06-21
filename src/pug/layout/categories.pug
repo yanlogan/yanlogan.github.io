@@ -1,0 +1,20 @@
+section.categories
+  .container
+    .categories__wrap
+      h2.categories__title
+        | Browse by 
+        span.categories__title-accent Job
+        | &nbsp;Categories
+      ul.categories__list
+        +category('Digital Marketing', 'marketing', '143 Jobs Opened')
+        +category('Art & Design', 'art', '110 Jobs Opened')
+        +category('Accounting', 'accounting', '158 Jobs Opened')
+        +category('Photography', 'photography', '95 Jobs Opened')
+        +category('Copy Writing', 'copywriting', '113 Jobs Opened')
+        +category('Music', 'music', '55 Jobs Opened')
+        +category('Human Resouces', 'hr', '25 Jobs Opened')
+        li.categories__more
+          a(href="#") 
+            h3.categories__more-title Explore 30&nbsp;More Categories
+            i.categories__more-icon
+              +icon('arrow')

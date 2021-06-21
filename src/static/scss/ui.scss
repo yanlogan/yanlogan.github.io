@@ -1,0 +1,64 @@
+.btn {
+  padding: 20px 42px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: $w;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &-primary {
+    background: $primary;
+    border-color: $primary;
+    &:hover {
+      background: lighten($primary, 3%);
+      border-color: lighten($primary, 3%);
+    }
+  }
+  &-secondary {
+    color: $text-dark;
+    &:hover {
+      color: $primary;
+    }
+  }
+  &-accent {
+    background: $accent;
+    border-color: $accent;
+    &:hover {
+      background: lighten($accent, 3%);
+      border-color: lighten($accent, 3%);
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: $text-dark;
+  font-weight: bold;
+  &::placeholder {
+    color: $text-light;
+    opacity: 0.5;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  &_lg {
+    width: 40px;
+    height: 40px;
+  }
+  &-shield {
+    fill: $accent;
+  }
+}
+
+.tooltip {
+  background: #FFFFFF;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}

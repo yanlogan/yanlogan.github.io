@@ -1,0 +1,47 @@
+.header-main {
+  background: rgba(54, 179, 126, 0.03);
+}
+
+.header {
+  padding: 28px 0;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  svg { display: block; }
+  margin-right: 350px;
+}
+
+.header-nav__list {
+  display: flex;
+  margin: 0 -28px;
+
+  a {
+    color: $text-dark;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.header-nav__item {
+  margin: 0 28px;
+}
+
+.header-btns {
+  margin-left: auto;
+}
+
+.header-btns___item {
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
